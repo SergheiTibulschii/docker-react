@@ -6,8 +6,8 @@ services:
 before_install:
   - docker build -t stibulschi/docker-react  .
 
-script:
-  - docker run -e CI=true -p 80:80 stibulschi/docker-react
+# script:
+#   - docker run -e CI=true -p 80:80 stibulschi/docker-react
 
 deploy:
   provider: elasticbeanstalk
